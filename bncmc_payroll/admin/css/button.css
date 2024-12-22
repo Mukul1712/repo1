@@ -1,0 +1,92 @@
+/* Buttons */
+
+    .btn,
+    .btn-icon,
+    .btn-mini
+    {
+	    background-repeat: repeat-x;
+	    color: #FFF;	
+	    font-weight: bold;
+	    display: inline-block;	
+	    text-decoration: none;
+	    border-width: 1px;
+	    border-style: solid;
+	    padding: 0 15px 4px;
+	    *padding: 0 7px 4px;
+	    margin: 0;
+	    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	    -moz-border-radius: 4px;
+	    -webkit-border-radius: 4px;
+	    filter: progid:DXImageTransform.Microsoft.Shadow(color=#999999,direction=135,strength=2);
+	    cursor: pointer;
+	    position: relative;
+    }
+	
+	/* Active/Click state */
+	.btn:active, .btn-icon:active, .btn-mini:active { top: 1px; }
+
+
+        /* Sizes */
+        .btn, .btn-icon { background-position: 0 -80px; font-size: 12px; height: 32px; line-height: 29px; }
+        .btn.btn-small, .btn-icon.btn-small { background-position: 0 0; font-size: 10px; height: 26px; line-height: 23px; }
+        .btn.btn-large, .btn-icon.btn-large { background-position: 0 -160px; font-size: 15px; height: 42px; line-height: 40px; }
+
+	        /* Sizes - Line height for A buttons need to be different */
+	        a.btn, a.btn-icon { height: 32px; line-height: 32px; padding-bottom: 0; }
+	        a.btn.btn-small, a.btn-icon.btn-small { line-height: 26px; padding-bottom: 0; }
+	        a.btn.btn-large, a.btn-icon.btn-large { line-height: 42px; padding-bottom: 0; }
+	
+
+        /* Fix the button in IE7 :-( */
+        *+html .btn, *+html .btn-icon { border-color: none ; border: 1px solid transparent; }
+
+        /* Colors */	
+        .btn-pink,
+        .btn-pink:visited { background-color: #FF0066; border-color: #DA0C59; }
+        .btn-pink:hover { background-color: #DA0C59; }
+
+        .btn-blue,
+        .btn-blue:visited { background-color: #066ECD; border-color: #0561B4; }
+        .btn-blue:hover { background-color: #0561B4; }
+
+        .btn-red,
+        .btn-red:visited { background-color: #E40001; border-color: #CC0000; }
+        .btn-red:hover { background-color: #CC0000; }
+
+        .btn-green,
+        .btn-green:visited { background-color: #77B32F; border-color: #689C29; }
+        .btn-green:hover { background-color: #689C29; }
+
+        .btn-black,
+        .btn-black:visited { background-color: #111; border-color: #000; }
+        .btn-black:hover { background-color: #000; }
+
+        .btn-purple,
+        .btn-purple:visited { background-color: #7B0F75; border-color: #6A0D66; }
+        .btn-purple:hover { background-color: #6A0D66; }
+
+        .btn-navy,
+        .btn-navy:visited { background-color: #002142; border-color: #00172F; }
+        .btn-navy:hover { background-color: #00172F; }
+
+        .btn-maroon,
+        .btn-maroon:visited { background-color: #750000; border-color: #530000; }
+        .btn-maroon:hover { background-color: #530000; }
+
+        .btn-yellow,
+        .btn-yellow:visited { background-color: #FFCC00; border-color: #D9AD01; }
+        .btn-yellow:hover { background-color: #D9AD01; }
+
+        .btn-teal,
+        .btn-teal:visited { background-color: #39A7B6; border-color: #2E8794; }
+        .btn-teal:hover { background-color: #2E8794; }
+
+        .btn-orange,
+        .btn-orange:visited { background-color: #F90; border-color: #D58000; color: #FFF; }
+        .btn-orange:hover{ background-color: #D58000; color: #FFF; }
+
+        .btn-grey,
+        .btn-grey:visited  { background-color: #999; border-color: #888; color: #FFF; }
+        .btn-grey:hover{ background-color: #888; color: #FFF; }

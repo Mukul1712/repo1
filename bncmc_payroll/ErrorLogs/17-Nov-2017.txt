@@ -1,0 +1,26 @@
+DateTime               : -17/11/2017 15:02:17
+Page                   : -/favicon.ico
+Message                : -File does not exist.
+Source                 : -   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+----------------------------------------------------------------------------------------
+DateTime               : -11/17/2017 3:16:16 PM
+Page                   : -/admin/trns_StaffInfo.aspx
+Message                : -Incorrect syntax near 'getdate'.
+----------------------------------------------------------------------------------------
+DateTime               : -11/17/2017 3:20:39 PM
+Page                   : -/admin/trns_StaffInfo.aspx
+Message                : -Incorrect syntax near 'getdate'.
+----------------------------------------------------------------------------------------
+DateTime               : -17/11/2017 19:10:46
+Page                   : -/favicon.ico
+Message                : -File does not exist.
+Source                 : -   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+----------------------------------------------------------------------------------------

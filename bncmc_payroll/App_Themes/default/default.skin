@@ -1,0 +1,53 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+
+<asp:TextBox runat="server" CssClass="text" />
+<asp:TextBox runat="server" Width="40" CssClass="text" Skinid="skn40" />
+<asp:TextBox runat="server" Width="50" CssClass="text" Skinid="skn50" />
+<asp:TextBox runat="server" Width="60" CssClass="text" Skinid="skn60" />
+<asp:TextBox runat="server" Width="70" CssClass="text" Skinid="skn70" />
+<asp:TextBox runat="server" Width="80" CssClass="text" Skinid="skn80" />
+<asp:TextBox runat="server" Width="120" CssClass="text" Skinid="skn120" />
+<asp:TextBox runat="server" Width="153" CssClass="text" Skinid="skn160" />
+<asp:TextBox runat="server" Width="180" CssClass="text" Skinid="skn180" />
+<asp:TextBox runat="server" Width="200" CssClass="text" Skinid="skn200" />
+<asp:TextBox runat="server" Width="400" CssClass="text" Skinid="skn400" />
+<asp:TextBox runat="server" Width="500" CssClass="text" Skinid="skn500" />
+<asp:TextBox runat="server" Width="630" CssClass="text" Skinid="skn630" />
+<asp:TextBox runat="server" Width="700" CssClass="text" Skinid="skn700" />
+<asp:TextBox runat="server" Width="800" CssClass="text" Skinid="skn800" />
+<asp:TextBox runat="server" Width="900" CssClass="text" Skinid="skn900" />
+
+<asp:dropdownlist runat="server" CssClass="dropdown" />
+
+<asp:GridView runat="server" Width="100%" CssClass="rounded-corner" AutoGenerateColumns="false"
+    AllowPaging="true" PageSize="10" GridLines="None">
+    
+    <HeaderStyle />
+    <RowStyle />
+    <AlternatingRowStyle />
+    
+    <PagerStyle HorizontalAlign="Left" />
+    <PagerSettings Mode="NumericFirstLast" Position="TopAndBottom"/> 
+ </asp:GridView>
+
+ <asp:GridView runat="server" Width="100%" CssClass="rounded-corner" AutoGenerateColumns="false"
+    AllowPaging="false" GridLines="None" SkinID="skn_np">
+    <HeaderStyle  />
+    <RowStyle />
+    <AlternatingRowStyle />
+ </asp:GridView>

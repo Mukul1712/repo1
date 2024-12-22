@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"  CodeBehind="admin_pyroll.master.cs"
+    Inherits="bncmc_payroll.admin.admin_pyroll" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Welcome To Bhiwandi Nizampur City Municipal Corporation</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/button.css" rel="stylesheet" type="text/css" />
+    <link href="css/calender.css" rel="stylesheet" type="text/css" />
+    <link href="../Controls/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 8]>
+	<link href="css/style_IE.css" rel="stylesheet" type="text/css" media="all" />
+	<![endif]-->
+    <%--<script type="text/javascript" src="js/RupeesSymbol_js.js"></script>--%>
+    <script type="text/javascript" src="js/jquery-1.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+    <style type="text/css">
+        table.form
+        { width: 100%; }
+        
+        table.form td
+        { padding: 2px 0px; }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="frmDetails" runat="server">
+    <uc_ajax:ToolkitScriptManager runat="Server" EnablePartialRendering="true" ID="ScriptManager1"
+        AsyncPostBackTimeout="660000">
+        <Services>
+            <asp:ServiceReference Path="~/ws/FillCombo.asmx" />
+        </Services>
+    </uc_ajax:ToolkitScriptManager>
+
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header_logo">
+                <a href="default.aspx">
+                    <img src="images/logo2.gif" width="500" height="122" alt="Logo" class="logo" /></a>
+                <div class="CmpName">
+                    Bhiwandi Nizampur City Municipal Corporation<br />
+                    <br />
+                    <p style="font-size: 15px; text-align: center;">
+                        Current Year :
+                        <asp:LinkButton runat="server" ID="lknYear" ForeColor="White" OnClick="lknSettings_Click" />
+                        &emsp; Current Month:
+                        <asp:LinkButton runat="server" ID="lknSettings" ForeColor="White" OnClick="lknSettings_Click" />
+                    </p>
+                </div>
+                <div class="right">
+                    <div style="text-align: center;margin-top:10px; padding: 5px 5px 5px 5px; color: White; font-weight: bolder; background-color:#355e93; border:1px solid #43699a;width:240px;height:50px;vertical-align:middle;">
+                        Welcome&nbsp; <u><i><asp:Literal ID="ltrUserName_Main" runat="server" /></i></u>
+                    </div>
+                    <ul class="light">
+                        <li class="first" style="text-align:center;width:150px;"><asp:Literal ID="ltrMyProfile" runat="server" /></li>
+                        <li><a href="../Default.aspx?IsLogof=Yes">
+                            <img src="images/icon_logout.gif" alt="picture" width="16" height="16" class="logout" /></a>
+                            <b><a href="../Default.aspx?IsLogof=Yes">logout</a></b></li>
+                            
+                    </ul>
+                </div>
+                <div class="clr">
+                </div>
+            </div>
+            <div class="menu">
+                <ul><asp:Literal ID="ltrUsrMenu" runat="server" /></ul>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="content_res">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="bgr">
+                <img src="images/footer_bg_left.gif" width="430" height="99" alt="" class="logo" />
+                <div class="f_right">
+                    <div class="right">
+                        <ul class="dark2"><li class="first">Payroll Management System</li></ul>
+                    </div>
+                    <br /><br />
+                    <p>
+                        <a href="#">
+                            <img src="images/footer_icon.gif" alt="picture" width="27" height="23" /></a>Website
+                            Administration by <a href="http://www.crocusitsolutions.com"><span>Crocus IT Solutions
+                            Pvt. Ltd.</span>
+                        </a>
+                    </p>
+                    <%-- <p style="font-size:13px;font-weight:bold;"> Users Count:<asp:Literal ID="ltrTotalUsers" runat="server" /></p>--%>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <asp:Panel ID="pnl_Month" runat="server" Style="display: none">
+            <div id="div_SettingHead" style="width: 450px; height: 50px; background-color: #5E610B;
+                border: 2px solid #000000; color: White; text-align: center; cursor: move;">
+                <h3>SELECT MONTH & YEAR</h3>
+            </div>
+            <div style="overflow: auto; width: 450px; height: 120px; background-color: #3A2F0B;
+                color: White; border: 2px solid #000000">
+                <table width="70%" border="0" cellpadding="2" cellspacing="0" style="padding: 20px 10px 10px 10px;"
+                    class="form">
+                    <tr>
+                        <td width="10%">&nbsp;</td>
+                        <td width="30%" style="font-size: 15px;">Login Year :</td>
+                        <td width="60%">
+                            <asp:DropDownList ID="ddl_Year" runat="server" OnSelectedIndexChanged="ddl_Year_SelectedIndexChanged"
+                                AutoPostBack="true" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10%">&nbsp;</td>
+                        <td width="30%" style="font-size: 15px;">Login Month :</td>
+                        <td width="60%">
+                            <asp:DropDownList ID="ddl_Month" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="width: 450px; background-color: #5E610B; text-align: center; border: 2px solid #000000;color: White;">
+                <asp:Button ID="btnSave" runat="server" Text="Select" CssClass="btn btn-blue" OnClick="btnSave_Click" />
+                <asp:Button ID="btncancelSettings" runat="server" CssClass="btn btn-blue" Text="Cancel" />
+            </div>
+        </asp:Panel>
+
+        <asp:Button ID="btnShowPopup" runat="server" Style="display: none" />
+        <uc_ajax:ModalPopupExtender BackgroundCssClass="modalBackground" runat="server" PopupControlID="pnl_Month"
+            ID="MPE_Month" CancelControlID="btncancelSettings" Drag="false" PopupDragHandleControlID="div_SettingHead"
+            TargetControlID="btnShowPopup" />
+    </div>
+    </form>
+</body>
+</html>
+
+
+

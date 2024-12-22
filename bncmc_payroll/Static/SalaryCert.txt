@@ -1,0 +1,38 @@
+<table style="width:100%;height:100%;cellpadding="0" cellspacing="0" class="rpt_table" border="0">
+		
+         <tr>
+			<td  rowspan="2" style="text-align:right;width:20%;"><img src='images/logo_simple.jpg' width='90px' height='90px' alt='Logo'></td>
+            <th colspan="4" style="text-align:left;width:80%;">{Company Caption}</th>
+        </tr>
+		 <tr>
+            <td colspan="4" style="text-align:left;padding-left:150px;;vertical-align:top;font-size:25px;dont-weight:bold;" ><u>Employee Salary Certificate</u></td>
+        </tr>
+</table>
+
+<Div style='text-align:center;font-weight:bold;color:Black;'> </Div>
+<br/>
+
+<Div style='font-weight:bold;text-align:center;color:Black;font-size:9pt;'>
+	<p style='padding:5px 5px 5px 5px;'>This is to Certify that Shri/Smt/Ku/  '<u><i>{Employee Name}'</i></u> 
+	<br/>is working with us as '<u><i>{Designation} '</i></u><br/> and having Payscale <i>'<u>{Payscale}</u>'</i></p>
+	<p style='padding:5px 5px 5px 5px;'></u>  He /She is a Confirmed Member/Member of our Employee.
+	<br/>The following are the details of His/Her salary for the Month of  '<u><i>{MONTHNAME}</i> </u> </p>
+</Div>
+
+<Div style='text-align:center;font-size:9px;'>
+
+<table style="width:100%;height:100%;cellpadding="0" cellspacing="0" class="rpt_table" border="0">
+	<tr>
+		<td colspan="6" style='text-align:left;padding-left:40px;' class="lineTop">{Earn_Deducations}</td>
+	</tr>
+
+	 <tr>
+		<td colspan="6" class="lineTop" style="height:20px;text-align:left;">Rs. {Rupees In Words} ONLY</td>
+	</tr>
+
+	<tr>
+		<td colspan="6" style='text-align:left'>Certificate Date : {Date}</td>
+	</tr>		
+</table>
+</Div>
+<br/><br/><br/><br/>

@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmpoyeeMstr.master.cs" Inherits="bncmc_payroll.Employee.EmpoyeeMstr" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>Welcome To Bhiwandi Nizampur City Municipal Corporation</title>
+    <link href="../admin/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../admin/css/button.css" rel="stylesheet" type="text/css" />
+    <link href="../admin/css/calender.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.webrupee.com/font">
+    <link href="../Controls/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 8]>
+	<link href="css/style_IE.css" rel="stylesheet" type="text/css" media="all" />
+	<![endif]-->
+    <%--<script type="text/javascript" src="js/RupeesSymbol_js.js"></script>--%>
+    <script type="text/javascript" src="../admin/js/jquery-1.4.1.js"></script>
+    <script type="text/javascript" src="../admin/js/jquery-ui-1.7.2.custom.min.js"></script>
+    <style type="text/css">
+        table.form
+        { width: 100%; }
+        
+        table.form td
+        { padding: 2px 0px; }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmDetails" runat="server">
+    <uc_ajax:ToolkitScriptManager runat="Server" EnablePartialRendering="true" ID="ScriptManager1"
+        AsyncPostBackTimeout="660000">
+        <Services>
+            <asp:ServiceReference Path="~/ws/FillCombo.asmx" />
+        </Services>
+    </uc_ajax:ToolkitScriptManager>
+
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header_logo">
+                <a href="default.aspx">
+                    <img src="../admin/images/logo2.gif" width="500" height="122" alt="Logo" class="logo" /></a>
+                <div class="CmpName">Bhiwandi Nizampur City Municipal Corporation<br /><br />
+                    <p style="font-size: 15px; text-align: center;">
+                        Current Year :
+                        <asp:LinkButton runat="server" ID="lknYear" ForeColor="White" />
+                    </p>
+                </div>
+                <div class="right">
+                    <div style="text-align: center;margin-top:10px; padding: 5px 5px 5px 5px; color: White; font-weight: bolder; background-color:#355e93; border:1px solid #43699a;width:240px;height:50px;vertical-align:middle;">
+                        Welcome&nbsp; <u><i><asp:Literal ID="ltrUserName_Main" runat="server" /></i></u>
+                    </div>
+                    <ul class="light">
+                        <li class="first" style="text-align:center;width:150px;"><asp:Literal ID="ltrMyProfile" runat="server" /></li>
+                        <li><a href="../Default.aspx?IsLogof=Yes">
+                            <img src="../admin/images/icon_logout.gif" alt="picture" width="16" height="16" class="logout" /></a>
+                            <b><a href="../Default.aspx?IsLogof=Yes">logout</a></b></li>
+                            
+                    </ul>
+                </div>
+                <div class="clr">
+                </div>
+            </div>
+            <div class="menu" style="text-align:center;">
+                <ul>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=1" class='active'><span><span><span>Salary Slip</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=2" class='active'><span><span><span>Paysheet</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=3" class='active'><span><span><span>Salary Recap</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=4" class='active'><span><span><span>Loan Issued</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=5" class='active'><span><span><span>Advance Issued</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=6" class='active'><span><span><span>Allownace Report</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=7" class='active'><span><span><span>Deduction Report</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=8" class='active'><span><span><span>Form 16</span></span></span></a></li>
+                    <li><a href="vwr_SalarySlipDtls.aspx?ReportID=9" class='active'><span><span><span>Tax Calculation</span></span></span></a></li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="content_res">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="bgr">
+                <img src="../admin/images/footer_bg_left.gif" width="430" height="99" alt="" class="logo" />
+                <div class="f_right">
+                    <div class="right">
+                        <ul class="dark2"><li class="first">Payroll Management System</li></ul>
+                    </div>
+                    <br /><br />
+                    <p>
+                        <a href="#">
+                            <img src="../admin/images/footer_icon.gif" alt="picture" width="27" height="23" /></a>Website
+                            Administration by <a href="http://www.crocusitsolutions.com"><span>Crocus IT Solutions Pvt. Ltd.</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

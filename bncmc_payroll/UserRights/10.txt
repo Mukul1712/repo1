@@ -1,0 +1,61 @@
+<li><a href='default.aspx' class='active'><span><span><span>Dashboard </span></span></span></a>
+</li>
+<li><a href='Config_CompanyDtls.aspx' class='active'><span><span><span>Company Detail </span></span></span></a>
+</li>
+<li><a href='#' class='active'><span><span><span>Employee Info </span></span></span></a>
+</li>
+<li><a href='#' class='active'><span><span><span>Report <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='#' class='active'>Employee Info Reports <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_employee.aspx?ReportID=1'>Employee Code List</a></li>
+<li><a href='vwr_employee.aspx?ReportID=2'>Employee Attendance Reports</a></li>
+<li><a href='vwr_employee.aspx?ReportID=8'>DepartmentWise Attendance Reports</a></li>
+<li><a href='vwr_employee.aspx?ReportID=3'>Search Employee Wise</a></li>
+<li><a href='vwr_employee.aspx?ReportID=4'>Position Status List</a></li>
+<li><a href='vwr_employee.aspx?ReportID=7'>Seniority Report</a></li>
+<li><a href='vwr_employee.aspx?ReportID=6'>Employee Retirement</a></li>
+<li><a href='vwr_employee.aspx?ReportID=9'>Employee Increment</a></li>
+<li><a href='#'>Increment Letter</a></li>
+</ul></li>
+<li><a href='#' class='active'>Department Wise <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_department.aspx?ReportID=1'>Employee List</a></li>
+<li><a href='vwr_department.aspx?ReportID=2'>Department Changed List</a></li>
+<li><a href='vwr_department.aspx?ReportID=3'>Department Strength List</a></li>
+<li><a href='vwr_department.aspx?ReportID=4'>Ward List</a></li>
+<li><a href='vwr_department.aspx?ReportID=5'>Department List</a></li>
+<li><a href='vwr_department.aspx?ReportID=6'>Designation List</a></li>
+</ul></li>
+<li><a href='#' class='active'>Register <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_register.aspx?ReportID=4'>Salary Paid List</a></li>
+<li><a href='vwr_register.aspx?ReportID=3'>Loan Issue List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=4'>PF Sub PF Loan Statement</a></li>
+<li><a href='vwr_register.aspx?ReportID=5'>Bank Statement</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=6'>Advance List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=1'>Allowance List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=2'>Deduction List</a></li>
+<li><a href='vwr_customrpt.aspx?ReportID=1'>Bank Deduction List</a></li>
+<li><a href='vwr_customrpt.aspx?ReportID=2'>L.I.C. Deduction List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=5'>Basic Paid List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=7'>Bank Loan Deduction Compare</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=3'>GSLI List Statement</a></li>
+<li><a href='vwr_register.aspx?ReportID=1'>Post Allotment</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=8'>Salary Generation Statistics</a></li>
+</ul></li>
+<li><a href='#' class='active'>Salary Reports <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_paysheet.aspx?ReportID=1'>Pay Sheet Employee wise</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=2'>Pay Sheet Department wise</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=10'>Pay Sheet Employee wise Yearly</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=3'>Salary Recape</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=4'>Department Wise Salary Slip</a></li>
+<li><a href='vwr_PaysheetSmry.aspx?ReportID=1'>Salary Sheet Summary</a></li>
+<li><a href='vwr_PaysheetSmry.aspx?ReportID=2'>Ward Wise Salary Sheet Summary</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=9'>Grand Summaryof Salary Bill</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=5'>Salary Certificate</a></li>
+<li><a href='vwr_PFReports.aspx?ReportID=1'>Departmentwise PF Report</a></li>
+<li><a href='vwr_PFReports.aspx?ReportID=2'>Departmentwise PF Report Yearly Summary</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=11'>Departmentwise Pension Comtribution</a></li>
+<li><a href='vwr_Form16.aspx?ReportID=2'>Tax Calculation</a></li>
+</ul></li>
+<li><a href='#'>Back Dated Entrys</a></li>
+<li><a href='vwr_BlankSheet.aspx'>Blank Sheet</a></li>
+<li><a href='vwr_CompareData.aspx?ReportID=1'>Compare DB Value Register</a></li>
+</ul></li>

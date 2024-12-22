@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bncmc_payroll", "bncmc_payroll\bncmc_payroll.csproj", "{5E686653-BC20-41D3-9C7E-AC867FA6280B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bncmc_payroll.Routines", "bncmc_payroll.Routines\bncmc_payroll.Routines.csproj", "{F4784B1F-3536-4F2E-9FBB-2C34E9B34B33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E686653-BC20-41D3-9C7E-AC867FA6280B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E686653-BC20-41D3-9C7E-AC867FA6280B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E686653-BC20-41D3-9C7E-AC867FA6280B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E686653-BC20-41D3-9C7E-AC867FA6280B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4784B1F-3536-4F2E-9FBB-2C34E9B34B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4784B1F-3536-4F2E-9FBB-2C34E9B34B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4784B1F-3536-4F2E-9FBB-2C34E9B34B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4784B1F-3536-4F2E-9FBB-2C34E9B34B33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,138 @@
+<li><a href='default.aspx' class='active'><span><span><span>Dashboard </span></span></span></a>
+</li>
+<li><a href='Config_CompanyDtls.aspx' class='active'><span><span><span>Company Detail </span></span></span></a>
+</li>
+<li><a href='#' class='active'><span><span><span>General Masters <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='mst_Holiday.aspx'>Holiday Master</a></li>
+<li><a href='mst_Country.aspx'>Country Master</a></li>
+<li><a href='mst_State.aspx'>State Master</a></li>
+<li><a href='mst_District.aspx'>District Master</a></li>
+<li><a href='mst_City.aspx'>City Master</a></li>
+<li><a href='mst_Bank.aspx'>Bank Master</a></li>
+<li><a href='config_WkHoliday.aspx'>Weekly Holiday Setting</a></li>
+<li><a href='mst_ReportSignature.aspx'>Report Signature</a></li>
+</ul></li>
+<li><a href='#' class='active'><span><span><span>Payroll Masters <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='mst_Ward.aspx'>Ward Master</a></li>
+<li><a href='mst_class.aspx'>Class Master</a></li>
+<li><a href='mst_Department.aspx'>Department Master</a></li>
+<li><a href='mst_Designation.aspx'>Designation Master</a></li>
+<li><a href='mst_PostAllotment.aspx'>Post Master</a></li>
+<li><a href='mst_PayScale.aspx'>Pay Scale Master</a></li>
+<li><a href='mst_Leaves.aspx'>Leave Master</a></li>
+<li><a href='mst_allowance.aspx'>Allowance Master</a></li>
+<li><a href='mst_deduction.aspx'>Deduction Master</a></li>
+<li><a href='mst_Loan.aspx'>Loan Master</a></li>
+<li><a href='mst_Advance.aspx'>Advance Master</a></li>
+<li><a href='mst_AdvanceIssue.aspx'>Advance Issue Master</a></li>
+<li><a href='config_Shift.aspx'>Shift Settings</a></li>
+<li><a href='mst_CasteMaster.aspx'>Caste Master</a></li>
+<li><a href='trns_PFDeptEmp.aspx'>PF Employee Mapping</a></li>
+<li><a href='mst_PFInterest.aspx'>PF Interest Master</a></li>
+</ul></li>
+<li><a href='#' class='active'><span><span><span>Employee Info <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='trns_StaffInfo.aspx'>Employee Information</a></li>
+<li><a href='trns_Attend.aspx'>Employee Attendance</a></li>
+<li><a href='trns_AppAllowance.aspx'>Apply Allowance</a></li>
+<li><a href='trns_LoanIss.aspx'>Loan Issue</a></li>
+<li><a href='trns_LoanIssue2.aspx'>Loan Issue Multiple</a></li>
+<li><a href='trns_ApplyPolicy.aspx'>Apply Policy</a></li>
+<li><a href='#' class='active'>Manage Employee <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='#'>Apply Leave</a></li>
+<li><a href='#'>Approve Leave</a></li>
+<li><a href='#'>Leaves Balance</a></li>
+<li><a href='#'>Resign</a></li>
+<li><a href='trns_ManageEmpRetirement.aspx'>Manage Retirement</a></li>
+<li><a href='trns_Promotion.aspx'>Employee Promotion</a></li>
+<li><a href='trns_Emptrans.aspx'>Employee Transfer</a></li>
+<li><a href='trns_SalaryIncDec_Staff.aspx'>Salary Increment & Decrement</a></li>
+<li><a href='trns_SalaryIncrement_Dept.aspx'>Department wise Increment</a></li>
+</ul></li>
+<li><a href='#' class='active'>Generate Payslip <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='trns_Gen_SnglSlry.aspx'>Individual Payslip</a></li>
+<li><a href='trns_GenGrpSlry.aspx'>Group Detail Payslip</a></li>
+<li><a href='#'>Group Summary Payslip</a></li>
+</ul></li>
+<li><a href='trns_Advns.aspx'>Advance Entry</a></li>
+<li><a href='trns_Advns_Multi.aspx'>Advance Entry Multiple</a></li>
+<li><a href='trns_BackDated.aspx'>Back Dated Entrys</a></li>
+<li><a href='trns_AuditTrans.aspx'>Audit Transactions</a></li>
+<li><a href='trns_ApproveTrans.aspx'>Approve Transactions</a></li>
+<li><a href='trns_Form16.aspx'>Form 16</a></li>
+<li><a href='trns_PFOpening.aspx'>PF Opening</a></li>
+<li><a href='trns_PFSmryYrlyRemark.aspx'>PF Summary Yearly Remarks</a></li>
+<li><a href='trns_PFReport.aspx'>PF Report</a></li>
+</ul></li>
+<li><a href='#' class='active'><span><span><span>Report <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='#' class='active'>Employee Info Reports <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_employee.aspx?ReportID=1'>Employee Code List</a></li>
+<li><a href='vwr_employee.aspx?ReportID=2'>Employee Attendance Reports</a></li>
+<li><a href='vwr_employee.aspx?ReportID=8'>DepartmentWise Attendance Reports</a></li>
+<li><a href='vwr_employee.aspx?ReportID=3'>Search Employee Wise</a></li>
+<li><a href='vwr_employee.aspx?ReportID=4'>Position Status List</a></li>
+<li><a href='vwr_employee.aspx?ReportID=7'>Seniority Report</a></li>
+<li><a href='vwr_employee.aspx?ReportID=6'>Employee Retirement</a></li>
+<li><a href='vwr_employee.aspx?ReportID=9'>Employee Increment</a></li>
+<li><a href='#'>Increment Letter</a></li>
+</ul></li>
+<li><a href='#' class='active'>Department Wise <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_department.aspx?ReportID=1'>Employee List</a></li>
+<li><a href='vwr_department.aspx?ReportID=2'>Department Changed List</a></li>
+<li><a href='vwr_department.aspx?ReportID=3'>Department Strength List</a></li>
+<li><a href='vwr_department.aspx?ReportID=4'>Ward List</a></li>
+<li><a href='vwr_department.aspx?ReportID=5'>Department List</a></li>
+<li><a href='vwr_department.aspx?ReportID=6'>Designation List</a></li>
+<li><a href='vwr_department.aspx?ReportID=7'>AadhaarNo Wise Employee List</a></li>
+</ul></li>
+<li><a href='#' class='active'>Register <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_register.aspx?ReportID=4'>Salary Paid List</a></li>
+<li><a href='vwr_register.aspx?ReportID=3'>Loan Issue List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=4'>PF Sub PF Loan Statement</a></li>
+<li><a href='vwr_register.aspx?ReportID=5'>Bank Statement</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=6'>Advance List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=1'>Allowance List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=2'>Deduction List</a></li>
+<li><a href='vwr_customrpt.aspx?ReportID=1'>Bank Deduction List</a></li>
+<li><a href='vwr_customrpt.aspx?ReportID=2'>L.I.C. Deduction List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=5'>Basic Paid List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=7'>Bank Loan Deduction Compare</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=3'>GSLI List Statement</a></li>
+<li><a href='vwr_register.aspx?ReportID=1'>Post Allotment</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=8'>Salary Generation Statistics</a></li>
+</ul></li>
+<li><a href='#' class='active'>Salary Reports <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_paysheet.aspx?ReportID=1'>Pay Sheet Employee wise</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=2'>Pay Sheet Department wise</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=10'>Pay Sheet Employee wise Yearly</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=3'>Salary Recape</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=4'>Department Wise Salary Slip</a></li>
+<li><a href='vwr_PaysheetSmry.aspx?ReportID=1'>Salary Sheet Summary</a></li>
+<li><a href='vwr_PaysheetSmry.aspx?ReportID=2'>Ward Wise Salary Sheet Summary</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=9'>Grand Summaryof Salary Bill</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=5'>Salary Certificate</a></li>
+<li><a href='vwr_PFReports.aspx?ReportID=1'>Departmentwise PF Report</a></li>
+<li><a href='vwr_PFReports.aspx?ReportID=2'>Departmentwise PF Report Yearly Summary</a></li>
+<li><a href='vwr_paysheet.aspx?ReportID=11'>Departmentwise Pension Comtribution</a></li>
+<li><a href='vwr_Form16.aspx?ReportID=2'>Tax Calculation</a></li>
+</ul></li>
+<li><a href='#'>Back Dated Entrys</a></li>
+<li><a href='vwr_BlankSheet.aspx'>Blank Sheet</a></li>
+<li><a href='vwr_CompareData.aspx?ReportID=1'>Compare DB Value Register</a></li>
+<li><a href='vwr_UserIpInfo.aspx'>User IP Info</a></li>
+</ul></li>
+<li><a href='#' class='active'><span><span><span>Security <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='usr_Security.aspx'>Security Master</a></li>
+<li><a href='usr_Users.aspx'>User Master</a></li>
+<li><a href='usr_usrrghts.aspx'>User Rights</a></li>
+<li><a href='usr_chgpassword.aspx'>Change Password</a></li>
+</ul></li>
+<li><a href='#' class='active'><span><span><span>Misc Setup <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='trns_StaffIDCard.aspx'>Employee ID Card Creation</a></li>
+<li><a href='#'>To Do List</a></li>
+<li><a href='Reminder.aspx'>Reminder</a></li>
+<li><a href='#'>ID Card Setup</a></li>
+<li><a href='#'>Create Letter Formats</a></li>
+<li><a href='#'>Themes Setup</a></li>
+<li><a href='trns_InsertAttendance.aspx'>Activate Month</a></li>
+<li><a href='util_QueryAnalizer.aspx'>SQL Query Analizar</a></li>
+</ul></li>

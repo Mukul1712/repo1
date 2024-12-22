@@ -1,0 +1,1066 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E686653-BC20-41D3-9C7E-AC867FA6280B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bncmc_payroll</RootNamespace>
+    <AssemblyName>bncmc_payroll</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.50401.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Crocus.AppManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Crocus.AppManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Crocus.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Crocus.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Crocus.DataManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Crocus.DataManager.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Atlas, Version=2.0.50727.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Web.Atlas.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adminlogin.aspx" />
+    <Content Include="admin\config_CompanyDtls.aspx" />
+    <Content Include="admin\config_freq.aspx" />
+    <Content Include="admin\config_Shift.aspx" />
+    <Content Include="admin\config_Slrytm.aspx" />
+    <Content Include="admin\config_WkHoliday.aspx" />
+    <Content Include="admin\css\button.css" />
+    <Content Include="admin\css\calender.css" />
+    <Content Include="admin\css\RupeesSymbol_CSS.css" />
+    <Content Include="admin\css\style.css" />
+    <Content Include="admin\css\style_IE.css" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\images\arrow_next.gif" />
+    <Content Include="admin\images\arrow_prev.gif" />
+    <Content Include="admin\images\artical_view.png" />
+    <Content Include="admin\images\bg-login-top.png" />
+    <Content Include="admin\images\bg-login.png" />
+    <Content Include="admin\images\button_blue.gif" />
+    <Content Include="admin\images\button_blue_left.gif" />
+    <Content Include="admin\images\button_blue_right.gif" />
+    <Content Include="admin\images\button_close_bl.gif" />
+    <Content Include="admin\images\button_close_gr.gif" />
+    <Content Include="admin\images\button_close_or.gif" />
+    <Content Include="admin\images\button_dropdown_bl.gif" />
+    <Content Include="admin\images\button_dropdown_gr.gif" />
+    <Content Include="admin\images\button_dropdown_or.gif" />
+    <Content Include="admin\images\button_dropup_bl.gif" />
+    <Content Include="admin\images\button_dropup_gr.gif" />
+    <Content Include="admin\images\button_dropup_or.gif" />
+    <Content Include="admin\images\button_orange.gif" />
+    <Content Include="admin\images\button_orange_left.gif" />
+    <Content Include="admin\images\button_orange_right.gif" />
+    <Content Include="admin\images\button_white.gif" />
+    <Content Include="admin\images\button_white_left.gif" />
+    <Content Include="admin\images\button_white_right.gif" />
+    <Content Include="admin\images\Calendar.png" />
+    <Content Include="admin\images\checkbox.png" />
+    <Content Include="admin\images\content_bg.gif" />
+    <Content Include="admin\images\db_attendance.png" />
+    <Content Include="admin\images\db_GPayment.png" />
+    <Content Include="admin\images\db_Payslip.png" />
+    <Content Include="admin\images\db_staff.png" />
+    <Content Include="admin\images\delete.png" />
+    <Content Include="admin\images\delete_Inactive.png" />
+    <Content Include="admin\images\dropdown_arrow.gif" />
+    <Content Include="admin\images\dropdown_bg.gif" />
+    <Content Include="admin\images\dropleft_arrow.gif" />
+    <Content Include="admin\images\edit.png" />
+    <Content Include="admin\images\edit_Inactive.png" />
+    <Content Include="admin\images\First.png" />
+    <Content Include="admin\images\footer_bg.jpg" />
+    <Content Include="admin\images\footer_bg_left.gif" />
+    <Content Include="admin\images\footer_bg_left.jpg" />
+    <Content Include="admin\images\footer_bg_right.jpg" />
+    <Content Include="admin\images\footer_icon.gif" />
+    <Content Include="admin\images\header_bg_right.jpg" />
+    <Content Include="admin\images\Help.png" />
+    <Content Include="admin\images\HomeHS.png" />
+    <Content Include="admin\images\icon_calendar.gif" />
+    <Content Include="admin\images\icon_clock.gif" />
+    <Content Include="admin\images\icon_email.gif" />
+    <Content Include="admin\images\icon_logout.gif" />
+    <Content Include="admin\images\Last.png" />
+    <Content Include="admin\images\LeafNodes.png" />
+    <Content Include="admin\images\linehr.gif" />
+    <Content Include="admin\images\li_arrow.gif" />
+    <Content Include="admin\images\li_square_white.gif" />
+    <Content Include="admin\images\logo.gif" />
+    <Content Include="admin\images\logo2.gif" />
+    <Content Include="admin\images\logo_Black.jpg" />
+    <Content Include="admin\images\menu_balloon.gif" />
+    <Content Include="admin\images\menu_balloon_left.gif" />
+    <Content Include="admin\images\menu_balloon_right.gif" />
+    <Content Include="admin\images\menu_bg.gif" />
+    <Content Include="admin\images\menu_split.gif" />
+    <Content Include="admin\images\NextPage.png" />
+    <Content Include="admin\images\ParentNodes.png" />
+    <Content Include="admin\images\PreviousPage.png" />
+    <Content Include="admin\images\print.png" />
+    <Content Include="admin\images\radio.png" />
+    <Content Include="admin\images\spacer.gif" />
+    <Content Include="admin\images\proccessing.gif" />
+    <Content Include="admin\images\up-arrow.png" />
+    <Content Include="admin\images\user_emp.png" />
+    <Content Include="admin\images\user_female.png" />
+    <Content Include="admin\images\user_male.png" />
+    <Content Include="admin\images\user_un.png" />
+    <Content Include="admin\images\viewIcon.png" />
+    <Content Include="admin\js\clock.js" />
+    <Content Include="admin\js\jquery-1.4.1.js" />
+    <Content Include="admin\js\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="admin\js\js.js" />
+    <Content Include="admin\js\RupeesSymbol_js.js" />
+    <Content Include="admin\mst_Advance.aspx" />
+    <Content Include="admin\mst_AdvanceIssue.aspx" />
+    <Content Include="admin\mst_allowance.aspx" />
+    <Content Include="admin\mst_Bank.aspx" />
+    <Content Include="admin\mst_CasteMaster.aspx" />
+    <Content Include="admin\mst_City.aspx" />
+    <Content Include="admin\mst_class.aspx" />
+    <Content Include="admin\mst_Country.aspx" />
+    <Content Include="admin\mst_deduction.aspx" />
+    <Content Include="admin\mst_Department.aspx" />
+    <Content Include="admin\mst_Designation.aspx" />
+    <Content Include="admin\mst_District.aspx" />
+    <Content Include="admin\mst_Holiday.aspx" />
+    <Content Include="admin\mst_IDCardSetUp.aspx" />
+    <Content Include="admin\mst_Leaves.aspx" />
+    <Content Include="admin\mst_Loan.aspx" />
+    <Content Include="admin\mst_PayrollFrequancies.aspx" />
+    <Content Include="admin\mst_PayScale.aspx" />
+    <Content Include="admin\mst_PFInterest.aspx" />
+    <Content Include="admin\mst_PostAllotment.aspx" />
+    <Content Include="admin\mst_ReportSignature.aspx" />
+    <Content Include="admin\mst_State.aspx" />
+    <Content Include="admin\mst_TaxSlab.aspx" />
+    <Content Include="admin\mst_Ward.aspx" />
+    <Content Include="admin\prn_Form16.aspx" />
+    <Content Include="admin\prn_Reports.aspx" />
+    <Content Include="admin\prn_SlrySlip.aspx" />
+    <Content Include="admin\trns_AdjustLoanAmt.aspx" />
+    <Content Include="admin\trns_Advns.aspx" />
+    <Content Include="admin\trns_ApproveTrans.aspx" />
+    <Content Include="admin\trns_AuditTrans.aspx" />
+    <Content Include="admin\trns_InsertAttendance.aspx" />
+    <Content Include="admin\trns_LoanIssue2.aspx" />
+    <Content Include="admin\trns_Advns_Multi.aspx" />
+    <Content Include="admin\trns_AppAllowance.aspx" />
+    <Content Include="admin\trns_ApplyPolicy.aspx" />
+    <Content Include="admin\trns_Attend.aspx" />
+    <Content Include="admin\trns_BackDated.aspx" />
+    <Content Include="admin\trns_Emptrans.aspx" />
+    <Content Include="admin\trns_GenGrpSlry.aspx" />
+    <Content Include="admin\trns_Gen_SnglSlry.aspx" />
+    <Content Include="admin\trns_LoanIss.aspx" />
+    <Content Include="admin\trns_ManageEmpRetirement.aspx" />
+    <Content Include="admin\trns_PFDeptEmp.aspx" />
+    <Content Include="admin\trns_PFOpening.aspx" />
+    <Content Include="admin\trns_PFReport.aspx" />
+    <Content Include="admin\trns_PFSmryYrlyRemark.aspx" />
+    <Content Include="admin\trns_Promotion.aspx" />
+    <Content Include="admin\trns_SalaryIncDec_Staff.aspx" />
+    <Content Include="admin\trns_SalaryIncrement_Dept.aspx" />
+    <Content Include="admin\trns_StaffIDCard.aspx" />
+    <Content Include="admin\trns_StaffInfo.aspx" />
+    <Content Include="admin\trns_Form16.aspx" />
+    <Content Include="admin\usr_chgpassword.aspx" />
+    <Content Include="admin\usr_Security.aspx" />
+    <Content Include="admin\usr_Users.aspx" />
+    <Content Include="admin\usr_usrrghts.aspx" />
+    <Content Include="admin\util_QueryAnalizer.aspx" />
+    <Content Include="admin\vwr_BackDated.aspx" />
+    <Content Include="admin\vwr_BankDeduct.aspx" />
+    <Content Include="admin\vwr_BasicSalaryComp.aspx" />
+    <Content Include="admin\vwr_BlankSheet.aspx" />
+    <Content Include="admin\vwr_CompareData.aspx" />
+    <Content Include="admin\vwr_customrpt.aspx" />
+    <Content Include="admin\vwr_department.aspx" />
+    <Content Include="admin\vwr_employee.aspx" />
+    <Content Include="admin\vwr_Form16.aspx" />
+    <Content Include="admin\vwr_paysheet.aspx" />
+    <Content Include="admin\vwr_PaysheetSmry.aspx" />
+    <Content Include="admin\vwr_PFReports.aspx" />
+    <Content Include="admin\vwr_Regilst.aspx" />
+    <Content Include="admin\vwr_register.aspx" />
+    <Content Include="admin\vwr_UserIpInfo.aspx" />
+    <Content Include="Controls\close.png" />
+    <Content Include="Controls\Common.js" />
+    <Content Include="Controls\EmployeePicker.ascx" />
+    <Content Include="Controls\modalbg.png" />
+    <Content Include="Controls\StyleSheet.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="default.htm" />
+    <Content Include="Employee\default.aspx" />
+    <Content Include="Employee\prn_Reports.aspx" />
+    <Content Include="Employee\vwr_SalarySlipDtls.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="index.htm" />
+    <Content Include="admin\prn_SlrySlip_Windows.aspx" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Static\Department Wise Salary Slip1.txt" />
+    <Content Include="Static\SlrySlipInMarathi.txt" />
+    <Content Include="Static\SlrySlip_Multi.txt" />
+    <Content Include="Static\FORM16.txt" />
+    <Content Include="Static\SalaryCert.txt" />
+    <Content Include="Static\SlrySlip.txt" />
+    <Content Include="Static\SlrySlip_Dos.txt" />
+    <Content Include="Static\SlrySlip_MultiInMarathi.txt" />
+    <Content Include="UserRights\1.txt" />
+    <Content Include="UserRights\10.txt" />
+    <Content Include="UserRights\2.txt" />
+    <Content Include="UserRights\3.txt" />
+    <Content Include="UserRights\4.txt" />
+    <Content Include="UserRights\5.txt" />
+    <Content Include="UserRights\6.txt" />
+    <Content Include="UserRights\8.txt" />
+    <Content Include="UserRights\9.txt" />
+    <Content Include="utility\login\fx.slide.css" />
+    <Content Include="utility\login\images\BhiwandiNiZampurCityMunicipalCorporation.gif" />
+    <Content Include="utility\login\images\button_close.jpg" />
+    <Content Include="utility\login\images\button_login.jpg" />
+    <Content Include="utility\login\images\login_l.jpg" />
+    <Content Include="utility\login\images\login_l.png" />
+    <Content Include="utility\login\images\login_m.jpg" />
+    <Content Include="utility\login\images\login_m.png" />
+    <Content Include="utility\login\images\login_r.jpg" />
+    <Content Include="utility\login\images\login_r.png" />
+    <Content Include="utility\login\images\login_top.jpg" />
+    <Content Include="utility\login\images\login_top.png" />
+    <Content Include="utility\login\images\spacer.gif" />
+    <Content Include="utility\login\js\fx.slide.js" />
+    <Content Include="utility\login\js\mootools-1.2-core-yc.js" />
+    <Content Include="utility\login\js\mootools-1.2-more.js" />
+    <Content Include="utility\login\style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="ws\FillCombo.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\css\admin_pyroll.Master.cs">
+      <DependentUpon>admin_pyroll.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\css\admin_pyroll.Master.designer.cs">
+      <DependentUpon>admin_pyroll.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\config_CompanyDtls.aspx.cs">
+      <DependentUpon>config_CompanyDtls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\config_CompanyDtls.aspx.designer.cs">
+      <DependentUpon>config_CompanyDtls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\config_freq.aspx.cs">
+      <DependentUpon>config_freq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\config_freq.aspx.designer.cs">
+      <DependentUpon>config_freq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\config_Shift.aspx.cs">
+      <DependentUpon>config_Shift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\config_Shift.aspx.designer.cs">
+      <DependentUpon>config_Shift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\config_Slrytm.aspx.cs">
+      <DependentUpon>config_Slrytm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\config_Slrytm.aspx.designer.cs">
+      <DependentUpon>config_Slrytm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\config_WkHoliday.aspx.cs">
+      <DependentUpon>config_WkHoliday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\config_WkHoliday.aspx.designer.cs">
+      <DependentUpon>config_WkHoliday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Advance.aspx.cs">
+      <DependentUpon>mst_Advance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Advance.aspx.designer.cs">
+      <DependentUpon>mst_Advance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_AdvanceIssue.aspx.cs">
+      <DependentUpon>mst_AdvanceIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_AdvanceIssue.aspx.designer.cs">
+      <DependentUpon>mst_AdvanceIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_allowance.aspx.cs">
+      <DependentUpon>mst_allowance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_allowance.aspx.designer.cs">
+      <DependentUpon>mst_allowance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Bank.aspx.cs">
+      <DependentUpon>mst_Bank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Bank.aspx.designer.cs">
+      <DependentUpon>mst_Bank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_CasteMaster.aspx.cs">
+      <DependentUpon>mst_CasteMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_CasteMaster.aspx.designer.cs">
+      <DependentUpon>mst_CasteMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_City.aspx.cs">
+      <DependentUpon>mst_City.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_City.aspx.designer.cs">
+      <DependentUpon>mst_City.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_class.aspx.cs">
+      <DependentUpon>mst_class.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_class.aspx.designer.cs">
+      <DependentUpon>mst_class.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Country.aspx.cs">
+      <DependentUpon>mst_Country.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Country.aspx.designer.cs">
+      <DependentUpon>mst_Country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_deduction.aspx.cs">
+      <DependentUpon>mst_deduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_deduction.aspx.designer.cs">
+      <DependentUpon>mst_deduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Department.aspx.cs">
+      <DependentUpon>mst_Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Department.aspx.designer.cs">
+      <DependentUpon>mst_Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Designation.aspx.cs">
+      <DependentUpon>mst_Designation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Designation.aspx.designer.cs">
+      <DependentUpon>mst_Designation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_District.aspx.cs">
+      <DependentUpon>mst_District.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_District.aspx.designer.cs">
+      <DependentUpon>mst_District.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Holiday.aspx.cs">
+      <DependentUpon>mst_Holiday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Holiday.aspx.designer.cs">
+      <DependentUpon>mst_Holiday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_IDCardSetUp.aspx.cs">
+      <DependentUpon>mst_IDCardSetUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_IDCardSetUp.aspx.designer.cs">
+      <DependentUpon>mst_IDCardSetUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Leaves.aspx.cs">
+      <DependentUpon>mst_Leaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Leaves.aspx.designer.cs">
+      <DependentUpon>mst_Leaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Loan.aspx.cs">
+      <DependentUpon>mst_Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Loan.aspx.designer.cs">
+      <DependentUpon>mst_Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_PayrollFrequancies.aspx.cs">
+      <DependentUpon>mst_PayrollFrequancies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_PayrollFrequancies.aspx.designer.cs">
+      <DependentUpon>mst_PayrollFrequancies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_PayScale.aspx.cs">
+      <DependentUpon>mst_PayScale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_PayScale.aspx.designer.cs">
+      <DependentUpon>mst_PayScale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_PFInterest.aspx.cs">
+      <DependentUpon>mst_PFInterest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_PFInterest.aspx.designer.cs">
+      <DependentUpon>mst_PFInterest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_PostAllotment.aspx.cs">
+      <DependentUpon>mst_PostAllotment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_PostAllotment.aspx.designer.cs">
+      <DependentUpon>mst_PostAllotment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_ReportSignature.aspx.cs">
+      <DependentUpon>mst_ReportSignature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_ReportSignature.aspx.designer.cs">
+      <DependentUpon>mst_ReportSignature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_State.aspx.cs">
+      <DependentUpon>mst_State.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_State.aspx.designer.cs">
+      <DependentUpon>mst_State.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_TaxSlab.aspx.cs">
+      <DependentUpon>mst_TaxSlab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_TaxSlab.aspx.designer.cs">
+      <DependentUpon>mst_TaxSlab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\mst_Ward.aspx.cs">
+      <DependentUpon>mst_Ward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\mst_Ward.aspx.designer.cs">
+      <DependentUpon>mst_Ward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\prn_Form16.aspx.cs">
+      <DependentUpon>prn_Form16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\prn_Form16.aspx.designer.cs">
+      <DependentUpon>prn_Form16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\prn_Reports.aspx.cs">
+      <DependentUpon>prn_Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\prn_Reports.aspx.designer.cs">
+      <DependentUpon>prn_Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\prn_SlrySlip.aspx.cs">
+      <DependentUpon>prn_SlrySlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\prn_SlrySlip.aspx.designer.cs">
+      <DependentUpon>prn_SlrySlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_AdjustLoanAmt.aspx.cs">
+      <DependentUpon>trns_AdjustLoanAmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_AdjustLoanAmt.aspx.designer.cs">
+      <DependentUpon>trns_AdjustLoanAmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_Advns.aspx.cs">
+      <DependentUpon>trns_Advns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_Advns.aspx.designer.cs">
+      <DependentUpon>trns_Advns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_ApproveTrans.aspx.cs">
+      <DependentUpon>trns_ApproveTrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_ApproveTrans.aspx.designer.cs">
+      <DependentUpon>trns_ApproveTrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_AuditTrans.aspx.cs">
+      <DependentUpon>trns_AuditTrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_AuditTrans.aspx.designer.cs">
+      <DependentUpon>trns_AuditTrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_InsertAttendance.aspx.cs">
+      <DependentUpon>trns_InsertAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_InsertAttendance.aspx.designer.cs">
+      <DependentUpon>trns_InsertAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_LoanIssue2.aspx.cs">
+      <DependentUpon>trns_LoanIssue2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_LoanIssue2.aspx.designer.cs">
+      <DependentUpon>trns_LoanIssue2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_Advns_Multi.aspx.cs">
+      <DependentUpon>trns_Advns_Multi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_Advns_Multi.aspx.designer.cs">
+      <DependentUpon>trns_Advns_Multi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_AppAllowance.aspx.cs">
+      <DependentUpon>trns_AppAllowance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_AppAllowance.aspx.designer.cs">
+      <DependentUpon>trns_AppAllowance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_ApplyPolicy.aspx.cs">
+      <DependentUpon>trns_ApplyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_ApplyPolicy.aspx.designer.cs">
+      <DependentUpon>trns_ApplyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_Attend.aspx.cs">
+      <DependentUpon>trns_Attend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_Attend.aspx.designer.cs">
+      <DependentUpon>trns_Attend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_BackDated.aspx.cs">
+      <DependentUpon>trns_BackDated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_BackDated.aspx.designer.cs">
+      <DependentUpon>trns_BackDated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_Emptrans.aspx.cs">
+      <DependentUpon>trns_Emptrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_Emptrans.aspx.designer.cs">
+      <DependentUpon>trns_Emptrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_GenGrpSlry.aspx.cs">
+      <DependentUpon>trns_GenGrpSlry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_GenGrpSlry.aspx.designer.cs">
+      <DependentUpon>trns_GenGrpSlry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_Gen_SnglSlry.aspx.cs">
+      <DependentUpon>trns_Gen_SnglSlry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_Gen_SnglSlry.aspx.designer.cs">
+      <DependentUpon>trns_Gen_SnglSlry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_LoanIss.aspx.cs">
+      <DependentUpon>trns_LoanIss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_LoanIss.aspx.designer.cs">
+      <DependentUpon>trns_LoanIss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_ManageEmpRetirement.aspx.cs">
+      <DependentUpon>trns_ManageEmpRetirement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_ManageEmpRetirement.aspx.designer.cs">
+      <DependentUpon>trns_ManageEmpRetirement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_PFDeptEmp.aspx.cs">
+      <DependentUpon>trns_PFDeptEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_PFDeptEmp.aspx.designer.cs">
+      <DependentUpon>trns_PFDeptEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_PFOpening.aspx.cs">
+      <DependentUpon>trns_PFOpening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_PFOpening.aspx.designer.cs">
+      <DependentUpon>trns_PFOpening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_PFReport.aspx.cs">
+      <DependentUpon>trns_PFReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_PFReport.aspx.designer.cs">
+      <DependentUpon>trns_PFReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_PFSmryYrlyRemark.aspx.cs">
+      <DependentUpon>trns_PFSmryYrlyRemark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_PFSmryYrlyRemark.aspx.designer.cs">
+      <DependentUpon>trns_PFSmryYrlyRemark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_Promotion.aspx.cs">
+      <DependentUpon>trns_Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_Promotion.aspx.designer.cs">
+      <DependentUpon>trns_Promotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_SalaryIncDec_Staff.aspx.cs">
+      <DependentUpon>trns_SalaryIncDec_Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_SalaryIncDec_Staff.aspx.designer.cs">
+      <DependentUpon>trns_SalaryIncDec_Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_SalaryIncrement_Dept.aspx.cs">
+      <DependentUpon>trns_SalaryIncrement_Dept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_SalaryIncrement_Dept.aspx.designer.cs">
+      <DependentUpon>trns_SalaryIncrement_Dept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_StaffIDCard.aspx.cs">
+      <DependentUpon>trns_StaffIDCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_StaffIDCard.aspx.designer.cs">
+      <DependentUpon>trns_StaffIDCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_StaffInfo.aspx.cs">
+      <DependentUpon>trns_StaffInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_StaffInfo.aspx.designer.cs">
+      <DependentUpon>trns_StaffInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\trns_Form16.aspx.cs">
+      <DependentUpon>trns_Form16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\trns_Form16.aspx.designer.cs">
+      <DependentUpon>trns_Form16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\usr_chgpassword.aspx.cs">
+      <DependentUpon>usr_chgpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\usr_chgpassword.aspx.designer.cs">
+      <DependentUpon>usr_chgpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\usr_Security.aspx.cs">
+      <DependentUpon>usr_Security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\usr_Security.aspx.designer.cs">
+      <DependentUpon>usr_Security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\usr_Users.aspx.cs">
+      <DependentUpon>usr_Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\usr_Users.aspx.designer.cs">
+      <DependentUpon>usr_Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\usr_usrrghts.aspx.cs">
+      <DependentUpon>usr_usrrghts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\usr_usrrghts.aspx.designer.cs">
+      <DependentUpon>usr_usrrghts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\util_QueryAnalizer.aspx.cs">
+      <DependentUpon>util_QueryAnalizer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\util_QueryAnalizer.aspx.designer.cs">
+      <DependentUpon>util_QueryAnalizer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_BackDated.aspx.cs">
+      <DependentUpon>vwr_BackDated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_BackDated.aspx.designer.cs">
+      <DependentUpon>vwr_BackDated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_BankDeduct.aspx.cs">
+      <DependentUpon>vwr_BankDeduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_BankDeduct.aspx.designer.cs">
+      <DependentUpon>vwr_BankDeduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_BasicSalaryComp.aspx.cs">
+      <DependentUpon>vwr_BasicSalaryComp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_BasicSalaryComp.aspx.designer.cs">
+      <DependentUpon>vwr_BasicSalaryComp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_BlankSheet.aspx.cs">
+      <DependentUpon>vwr_BlankSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_BlankSheet.aspx.designer.cs">
+      <DependentUpon>vwr_BlankSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_CompareData.aspx.cs">
+      <DependentUpon>vwr_CompareData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_CompareData.aspx.designer.cs">
+      <DependentUpon>vwr_CompareData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_customrpt.aspx.cs">
+      <DependentUpon>vwr_customrpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_customrpt.aspx.designer.cs">
+      <DependentUpon>vwr_customrpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_department.aspx.cs">
+      <DependentUpon>vwr_department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_department.aspx.designer.cs">
+      <DependentUpon>vwr_department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_employee.aspx.cs">
+      <DependentUpon>vwr_employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_employee.aspx.designer.cs">
+      <DependentUpon>vwr_employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_Form16.aspx.cs">
+      <DependentUpon>vwr_Form16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_Form16.aspx.designer.cs">
+      <DependentUpon>vwr_Form16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_paysheet.aspx.cs">
+      <DependentUpon>vwr_paysheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_paysheet.aspx.designer.cs">
+      <DependentUpon>vwr_paysheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_PaysheetSmry.aspx.cs">
+      <DependentUpon>vwr_PaysheetSmry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_PaysheetSmry.aspx.designer.cs">
+      <DependentUpon>vwr_PaysheetSmry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_PFReports.aspx.cs">
+      <DependentUpon>vwr_PFReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_PFReports.aspx.designer.cs">
+      <DependentUpon>vwr_PFReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_Regilst.aspx.cs">
+      <DependentUpon>vwr_Regilst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_Regilst.aspx.designer.cs">
+      <DependentUpon>vwr_Regilst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_register.aspx.cs">
+      <DependentUpon>vwr_register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_register.aspx.designer.cs">
+      <DependentUpon>vwr_register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\vwr_UserIpInfo.aspx.cs">
+      <DependentUpon>vwr_UserIpInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\vwr_UserIpInfo.aspx.designer.cs">
+      <DependentUpon>vwr_UserIpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SalarySlip.en-US1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySlip.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SalarySlip.mr-IN1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySlip.mr-IN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SalarySlip1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySlip.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\vwr_PFReport.en-US1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vwr_PFReport.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\vwr_PFReport.mr-IN1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vwr_PFReport.mr-IN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\vwr_PFReport1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vwr_PFReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomerSelectedArgs.cs" />
+    <Compile Include="Controls\EmployeePicker.ascx.cs">
+      <DependentUpon>EmployeePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EmployeePicker.ascx.designer.cs">
+      <DependentUpon>EmployeePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmpoyeeMstr.Master.cs">
+      <DependentUpon>EmpoyeeMstr.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\EmpoyeeMstr.Master.designer.cs">
+      <DependentUpon>EmpoyeeMstr.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\prn_Reports.aspx.cs">
+      <DependentUpon>prn_Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\prn_Reports.aspx.designer.cs">
+      <DependentUpon>prn_Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\vwr_SalarySlipDtls.aspx.cs">
+      <DependentUpon>vwr_SalarySlipDtls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\vwr_SalarySlipDtls.aspx.designer.cs">
+      <DependentUpon>vwr_SalarySlipDtls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="admin\prn_SlrySlip_Windows.aspx.cs">
+      <DependentUpon>prn_SlrySlip_Windows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\prn_SlrySlip_Windows.aspx.designer.cs">
+      <DependentUpon>prn_SlrySlip_Windows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ws\FillCombo.asmx.cs">
+      <DependentUpon>FillCombo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\default\default.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\css\admin_pyroll.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\SkinFile.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Employee\EmpoyeeMstr.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bncmc_payroll.Routines\bncmc_payroll.Routines.csproj">
+      <Project>{F4784B1F-3536-4F2E-9FBB-2C34E9B34B33}</Project>
+      <Name>bncmc_payroll.Routines</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\SalarySlip.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SalarySlip.en-US1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\SalarySlip.mr-IN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SalarySlip.mr-IN1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\SalarySlip.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SalarySlip1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\vwr_PFReport.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>vwr_PFReport.en-US1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\vwr_PFReport.mr-IN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>vwr_PFReport.mr-IN1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\vwr_PFReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>vwr_PFReport1.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2984</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

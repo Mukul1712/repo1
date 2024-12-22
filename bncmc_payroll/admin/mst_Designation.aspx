@@ -1,0 +1,256 @@
+﻿<%@ Page Title="" Language="C#" EnableEventValidation="false" MasterPageFile="~/admin/admin_pyroll.Master" AutoEventWireup="true" CodeBehind="mst_Designation.aspx.cs" Inherits="bncmc_payroll.admin.mst_Designation" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/JavaScript" language="JavaScript">
+        function pageLoad() {
+            var manager = Sys.WebForms.PageRequestManager.getInstance();
+            manager.add_endRequest(endRequest);
+            manager.add_beginRequest(OnBeginRequest);
+            $get('<%= ddl_WardID.ClientID %>').focus();
+        }
+
+        function OnBeginRequest(sender, args) {
+            var postBackElement = args.get_postBackElement();
+            if (postBackElement.id == 'btnClear') {
+                $get('UpdateProgress1').style.display = "block";
+            }
+            $get('up_container').className = 'Background';
+        }
+
+        function endRequest(sender, args) {
+            $get('up_container').className = '';
+        }
+
+        function CancelPostBack() {
+            var objMan = Sys.WebForms.PageRequestManager.getInstance();
+            if (objMan.get_isInAsyncPostBack())
+                objMan.abortPostBack();
+        }
+
+        function Validate_this(objthis) {
+            var sContent = objthis.options[objthis.selectedIndex].value;
+            if ((sContent == "0") || (sContent == " ") || (sContent == ""))
+                return false;
+            else
+                return true;
+        }
+
+        function Vld_Ward(source, args) { args.IsValid = Validate_this($get('<%= ddl_WardID.ClientID %>')); }
+        function Vld_Depart(source, args) { args.IsValid = Validate_this($get('<%= ddl_DepartmentID.ClientID %>')); }
+        function VldClassID(source, args) { args.IsValid = Validate_this($get('<%= ddl_ClassID.ClientID %>')); }
+
+    </script>
+     <script type="text/javascript">
+         nextfield = "ctl00_ContentPlaceHolder1_ddl_WardID";
+         netscape = "";
+         ver = navigator.appVersion; len = ver.length;
+         for (iln = 0; iln < len; iln++) if (ver.charAt(iln) == "(") break;
+         netscape = (ver.charAt(iln + 1).toUpperCase() != "C");
+
+         function keyDown(DnEvents) { // handles keypress
+             // determines whether Netscape or Internet Explorer
+             k = (netscape) ? DnEvents.which : window.event.keyCode;
+
+             var mySplitResult = nextfield.split(",");
+
+             if (k == 13) { // enter key pressed
+                 if (nextfield == 'done') return true; // submit, we finished all fields
+                 else { // we're not done yet, send focus to next box
+                     eval('document.aspnetForm.' + mySplitResult[0] + '.focus()');
+                     return false;
+                 }
+             }
+         }
+         document.onkeydown = keyDown; // work together to analyze keystrokes
+         if (netscape) document.captureEvents(Event.KEYDOWN | Event.KEYUP);
+    </script>
+
+            <asp:UpdatePanel ID="UpdPnl_ajx" runat="server" ChildrenAsTriggers="true" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <div id="up_container" style="background-color: #FFFFFF;">
+                        <div class="leftblock1 vertsortable">
+                            <div class="gadget">
+                                <div class="titlebar vertsortable_head">
+                                    <h3>Designation Master (Add/Edit/Delete)</h3>
+                                </div>
+            
+                                <div class="gadgetblock">
+                                    <table style="width:100%;" cellpadding="2" cellspacing="2" border="0">
+                                        <tr>
+                                            <td style="width:13%">Ward</td>
+                                            <td style="width:1%" class="text_red">*</td>
+                                            <td style="width:1%;">:</td>
+                                            <td style="width:35%">
+                                                <asp:DropDownList ID="ddl_WardID" runat="server" TabIndex="1" />
+                                                <uc_ajax:CascadingDropDown ID="ccd_Ward" runat="server" Category="Ward" TargetControlID="ddl_WardID" 
+                                                    LoadingText="Loading Ward..." PromptText="-- Select --" ServiceMethod="BindWarddropdown" ServicePath="~/ws/FillCombo.asmx"/>
+                                                <asp:CustomValidator id="CustVld_AcdYr" runat="server" ErrorMessage="Select ward"
+                                                    Display="Dynamic" CssClass="text_red" ValidationGroup="VldMe" ClientValidationFunction="Vld_Ward" />
+                                            </td>
+
+                                            <td style="width:15%;">Department</td>
+                                            <td style="width:1%;" class="text_red">*</td>
+                                            <td style="width:1%;">:</td>
+                                            <td style="width:33%;">
+                                                <asp:DropDownList ID="ddl_DepartmentID" runat="server" TabIndex="2" />
+                                                <uc_ajax:CascadingDropDown ID="ccd_Department" runat="server" Category="Department" TargetControlID="ddl_DepartmentID" 
+                                                    ParentControlID="ddl_WardID"  LoadingText="Loading Department..." PromptText="-- Select --" 
+                                                    ServiceMethod="BindDeptdropdown" ServicePath="~/ws/FillCombo.asmx"/>
+
+                                                <asp:CustomValidator id="CustomValidator2" runat="server" ErrorMessage="Select Department"
+                                                    Display="Dynamic" CssClass="text_red" ValidationGroup="VldMe" ClientValidationFunction="Vld_Depart"/>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Class</td>
+                                            <td class="text_red">*</td>
+                                            <td>:</td>
+                                            <td>
+                                                <asp:DropDownList ID="ddl_ClassID" runat="server" TabIndex="3" />
+                                                <asp:CustomValidator id="cstm_ClassID" runat="server" ErrorMessage="Select Class"
+                                                    Display="Dynamic" CssClass="text_red" ValidationGroup="VldMe" ClientValidationFunction="VldClassID"/>
+                                            </td>
+
+                                            <td>Designation Name</td>
+                                            <td class="text_red">*</td>
+                                            <td>:</td>
+                                            <td>
+                                                <asp:TextBox ID="txtDesignationName" MaxLength="50" runat="server" TabIndex="4" />
+                                                <asp:RequiredFieldValidator ID="ReqGroup" ControlToValidate="txtDesignationName" SetFocusOnError="true" Display="Dynamic" 
+                                                    runat="server" ValidationGroup="VldMe" ErrorMessage="Please Enter a Designation." CssClass="text_red" />
+
+                                                <asp:RegularExpressionValidator ID="RglrVld_Interestrate" runat="server" 
+		                                            Display="Dynamic" ValidationExpression="^[A-Z a-z].*$" ControlToValidate="txtDesignationName" 
+                                                    ValidationGroup="VldMe" ErrorMessage="Please Enter alphabets only." CssClass="text_red" />
+                                            </td>
+                                        </tr>
+
+                                         <tr>
+                                            <td>Designation Name (In Marathi)</td>
+                                            <td class="text_red">&nbsp;</td>
+                                            <td>:</td>
+                                            <td>
+                                                <asp:TextBox ID="txtDesgNameInMarathi" MaxLength="500" runat="server" TabIndex="5" />
+                                            </td>
+
+                                            <td>Is Active</td>
+                                            <td class="text_red">*</td>
+                                            <td>:</td>
+                                            <td>
+                                                <asp:CheckBox id="chkIsActive" runat="server" TabIndex="6" />
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="10" align="center">
+                                                <asp:Button ID="btnSubmit" runat="server" Text="Submit" TabIndex="7" CssClass="groovybutton" OnClick="btnSubmit_Click" ValidationGroup="VldMe"  />
+                                                <asp:Button ID="btnReset" runat="server" Text="Reset" TabIndex="8" CssClass="groovybutton_red" OnClick="btnReset_Click" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <asp:Panel ID="pnlDEntry" runat="server">
+                                <div class="gadget">
+                                    <div>
+                                        <asp:Button ID="btnShowDtls_50" runat="server" Text="Show Details (50)" TabIndex="9" CssClass="groovybutton" OnClick="btnShowDtls_50_Click" />
+                                        <asp:Button ID="btnShowDtls_100" runat="server" Text="Show Details (100)" TabIndex="10" CssClass="groovybutton" OnClick="btnShowDtls_100_Click" />
+                                        <asp:Button ID="btnShowDtls" runat="server" Text="Show Details" TabIndex="11" CssClass="groovybutton" OnClick="btnShowDtls_Click" />
+
+                                        <asp:DropDownList ID="ddlSearch" runat="server" Width="110px" TabIndex="12">
+                                            <asp:ListItem Value="WardName" Text="Ward Name" />
+                                            <asp:ListItem Value="DepartmentName" Text="Department" />
+                                            <asp:ListItem Value="ClassName" Text="Class" />
+                                            <asp:ListItem Value="DesignationName" Text="Designation" />
+                                        </asp:DropDownList>
+                                        <asp:TextBox ID="txtSearch" runat="server" SkinID="skn200" TabIndex="13" />
+                                        <asp:Button ID="btnSearch" CssClass="groovybutton" Text="Filter" runat="server" OnClick="btnFilter_Click" TabIndex="14" />
+                                        <asp:Button ID="btnClear" CssClass="groovybutton" Text="Clear" runat="server" OnClick="btnClear_Click" TabIndex="15" />
+                                    </div>
+
+                                    <div class="gadgetblock">
+                                        <asp:GridView ID="grdDtls" runat="server" AllowSorting="true" OnRowCommand="grdDtls_RowCommand" OnPageIndexChanging="grdDtls_PageIndexChanging" OnSorting="grdDtls_Sorting">
+                                            <EmptyDataTemplate>
+                                                <div style="width:100%;height:100px;"><h2>No Records Available in this  Master. </h2></div>
+                                            </EmptyDataTemplate>
+                        
+                                            <Columns>
+                                                <asp:TemplateField ItemStyle-Width="5%" HeaderText="Sr. No.">
+                                                    <ItemTemplate><%#Container.DataItemIndex+1%></ItemTemplate>
+                                                </asp:TemplateField>
+
+                                                <asp:BoundField DataField="WardName" SortExpression="WardName" ItemStyle-Width="15%" HeaderText="Ward" />
+                                                <asp:BoundField DataField="DepartmentName" SortExpression="DepartmentName" ItemStyle-Width="20%" HeaderText="Department" />
+                                                <asp:BoundField DataField="ClassName" SortExpression="ClassName" ItemStyle-Width="10%" HeaderText="Class" />
+                                                <asp:BoundField DataField="DesignationName" SortExpression="DesignationName" ItemStyle-Width="20%" HeaderText="Designation" />
+                                                <asp:BoundField DataField="DesgNameInMarathi" SortExpression="DesgNameInMarathi" ItemStyle-Width="20%" HeaderText="Designation (InMarathi)" />
+                                                <asp:BoundField DataField="IsActive" SortExpression="IsActive" HeaderText="IsActive" ItemStyle-Width="5%" />
+                                                <asp:TemplateField ItemStyle-Width="5%" HeaderText="Action">
+                                                    <ItemTemplate>                           
+                                                        <asp:ImageButton ID="ImgEdit" ImageUrl="images/edit.png"  runat="server" CommandArgument='<%#Eval("DesignationID")%>' CommandName="RowUpd" ToolTip="View/Edit Record" />
+                                                        <asp:ImageButton ID="imgDelete" ImageUrl="images/delete.png" runat="server" onclientclick="return confirm('Do you want to delete this Record?');" CommandArgument='<%#Eval("DesignationID")%>' CommandName="RowDel" ToolTip="Delete Record" />
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                            </Columns>
+                                        </asp:GridView>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </ContentTemplate>
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="btnSubmit" EventName="Click" />
+		            <asp:AsyncPostBackTrigger ControlID="btnReset" EventName="Click" />
+                </Triggers>
+            </asp:UpdatePanel>
+
+            <asp:UpdateProgress ID="UpdPrg1" runat="server" AssociatedUpdatePanelID="UpdPnl_ajx">
+                <ProgressTemplate>
+                    <div id="IMGDIV" align="center" valign="middle" runat="server" style=" position: fixed;left: 50%;top: 50%;visibility:visible;vertical-align:middle;border-style:outset;border-color:#C0C0C0;background-color:White;z-index:40;">
+                        <img src="images/proccessing.gif" alt="" width="70" height="70" /> <br/>Please wait...
+                    </div>
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+
+            <uc_ajax:UpdatePanelAnimationExtender ID="UpdAniExt1" BehaviorID="animation" TargetControlID="UpdPnl_ajx" runat="server">
+                <Animations>
+                    <OnUpdating>
+                        <Parallel duration="0">
+                            <ScriptAction Script="onUpdating();" />
+                            
+					        
+                            <EnableAction AnimationTarget="btnShowDtls" Enabled="false" />
+                            <EnableAction AnimationTarget="btnShowDtls_50" Enabled="false" />
+                            <EnableAction AnimationTarget="btnShowDtls_100" Enabled="false" />
+                            <EnableAction AnimationTarget="ddlSearch" Enabled="false" />
+                            <EnableAction AnimationTarget="txtSearch" Enabled="false" />
+                            <EnableAction AnimationTarget="btnSearch" Enabled="false" />
+                            <EnableAction AnimationTarget="btnClear" Enabled="false" />
+                        </Parallel>
+                    </OnUpdating>
+                    <OnUpdated>
+                        <Parallel duration="1">
+                            <ScriptAction Script="onUpdated();" />
+                            
+					        
+                            <EnableAction AnimationTarget="btnShowDtls" Enabled="true" />
+                            <EnableAction AnimationTarget="btnShowDtls_50" Enabled="true" />
+                            <EnableAction AnimationTarget="btnShowDtls_100" Enabled="true" />
+                            <EnableAction AnimationTarget="ddlSearch" Enabled="true" />
+                            <EnableAction AnimationTarget="txtSearch" Enabled="true" />
+                            <EnableAction AnimationTarget="btnSearch" Enabled="true" />
+                            <EnableAction AnimationTarget="btnClear" Enabled="true" />
+                        </Parallel>
+                    </OnUpdated>
+                </Animations>
+            </uc_ajax:UpdatePanelAnimationExtender>
+    <!-- /centercol -->
+
+</asp:Content>
+

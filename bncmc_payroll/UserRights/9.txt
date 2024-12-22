@@ -1,0 +1,7 @@
+<li><a href='default.aspx' class='active'><span><span><span>Dashboard </span></span></span></a>
+</li>
+<li><a href='#' class='active'><span><span><span>Employee Info <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='#' class='active'>Generate Payslip <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='trns_Gen_SnglSlry.aspx'>Individual Payslip</a></li>
+</ul></li>
+</ul></li>

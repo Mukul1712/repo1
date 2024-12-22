@@ -1,0 +1,18 @@
+<li><a href='default.aspx' class='active'><span><span><span>Dashboard </span></span></span></a>
+</li>
+<li><a href='#' class='active'><span><span><span>Employee Info <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='trns_StaffInfo.aspx'>Employee Information</a></li>
+<li><a href='trns_LoanIss.aspx'>Loan Issue</a></li>
+<li><a href='trns_PFSmryYrlyRemark.aspx'>PF Summary Yearly Remarks</a></li>
+<li><a href='trns_PFOpening.aspx'>PF Opening</a></li>
+<li><a href='trns_PFReport.aspx'>PF Report</a></li>
+</ul></li>
+<li><a href='#' class='active'><span><span><span>Report <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='#' class='active'>Register <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></a><ul>
+<li><a href='vwr_register.aspx?ReportID=3'>Loan Issue List</a></li>
+<li><a href='vwr_Regilst.aspx?ReportID=4'>PF Sub PF Loan Statement</a></li>
+</ul></li>
+</ul></li>
+<li><a href='#' class='active'><span><span><span>Misc Setup <img src='images/dropdown_arrow.gif' alt='picture' width='8' height='7' /></span></span></span></a><ul>
+<li><a href='util_QueryAnalizer.aspx'>SQL Query Analizar</a></li>
+</ul></li>

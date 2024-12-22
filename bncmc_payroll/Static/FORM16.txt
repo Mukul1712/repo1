@@ -1,0 +1,322 @@
+<table  style='width:100%;font-size:12px;' cellpadding="2" cellspacing="0" border="0" class='table'>
+			<tr>
+				<td colspan='5' class='LineAll textBold' style='text-align:center;'>FORM NO. 16 </td>
+			</tr>
+			<tr>
+				<td colspan='5' class='LineBottom LineLeft LineRight' style='font-size:14px; padding-bottom:10px;text-align:Center;width:100% '>[See rule 31 (1)(a)]</td>
+			</tr>
+			<tr>
+				<td colspan='5' class='LineBottom LineLeft LineRight'style='font-size:15px;font-weight:bold; text-align:Center;width:100%'>PART A</td>
+			</tr>
+			<tr>
+				<td colspan='5' class='LineBottom LineRight LineLeft'style='font-size:15px;font-weight:bold;text-align:Center;width:100%'>Certificate under section 203 of the Income-Tax Act, 1961 for Tax deducted at source on Salary</td>
+			</tr>
+		
+			<tr>
+				<td colspan="2"  class='LineBottom LineRight LineLeft' style='font-weight:bold;text-align:center;width:50%'>Name and address of the Employer</td>
+				<td colspan="3" class='LineBottom LineRight'style ='font-weight:bold;text-align:center;width:50%'>Name and Designation of Employee</td>
+			</tr>
+			<tr>
+				<td colspan="2" class='LineBottom LineRight LineLeft' style='font-weight:bold'>
+					{EMPLOYER_ADDRESS}
+				</td>
+				<td colspan="3" class='LineBottom LineRight' style='font-weight:bold'>
+					{EMPLOYEENAME}<br/><br/>
+					{DESIGNATION}
+				</td>
+			</tr>
+			<tr>
+				<td colspan='2'class='LineBottom LineLeft LineRight' style='font-weight:bold;text-align:center'>PAN of the Deductor</td>
+				<td colspan='1'class='LineBottom LineRight' style='font-weight:bold;text-align:center'>TAN of the Deductor</td>
+				<td colspan="2" class='LineBottom LineRight' style='font-weight:bold;text-align:center'>PAN of the Employee</td>
+			</tr>
+			<tr>
+				<td colspan='2'class='LineBottom LineLeft LineRight' style='text-align:center'>{PANOFDEDUCTOR}</td>
+				<td colspan='1' class='LineBottom LineRight' style='text-align:center'>{TANOFDEDUCTOR}</td>
+				<td colspan='2' class='LineBottom LineRight' style='text-align:center'>{PANOFEMPLOYEE}</td>
+			</tr>
+
+			<tr>
+				<td class='LineLeft LineRight' colspan='2' style='font-weight:bold;text-align:center'><span>CIT(TDS)</span></td>
+				<td colspan='1' class='LineBottom LineRight' style="font-weight:bold">Assessment year</td>
+				<td class='LineBottom LineRight' style="font-weight:bold" colspan='2'>Period</td>
+			</tr>
+
+			<tr>
+				<td rowspan='2' colspan='2' class='LineBottom LineLeft LineRight'>
+					<span style="font-weight:bold"> Address: </span> &nbsp {CITADDRESS}
+					<span style='font-weight:bold;'>City: </span> &nbsp {CITCITY} &nbsp <span style='font-weight:bold;'>Pin Code:</span>   {CITPIN} </td>
+					<td class='LineBottom LineRight' style='font-weight:bold;text-align:center' rowspan='2'><span>{Assessment Year}</span></td>
+					<td colspan='1' class='LineBottom LineRight' style="font-weight:bold">From</td>
+				<td class='LineBottom LineRight' style="font-weight:bold ">To</td>
+			</tr>
+			
+			<tr>
+				<td class='LineBottom LineRight'>{FromDate}</td>
+				<td class='LineBottom LineRight'>{ToDate}</td>
+			</tr>
+			<tr>
+				<td colspan='5' class='LineBottom LineRight LineLeft' style='font-weight:bold;text-align:center'>Summary of tax deducted at source</td>
+			</tr>
+			<tr>
+				<td colspan='1' class='LineBottom LineRight LineLeft' style="font-weight:bold;width:30%;">Quarter</td>
+				<td colspan='2' class='LineBottom LineRight'style="font-weight:bold"> Receipt numbers of original statements of TDS under sub-section (3) of section 200 </td>
+				<td colspan='1' class='LineBottom LineRight' style="font-weight:bold"><span font-weight:bold "> Amount of tax deducted in respect of the employee</span> </td>
+				<td colspan='1' class='LineBottom LineRight' style="font-weight:bold"><span font-weight:bold "> Amount of tax deposited/remmited in respect of the employee</span> </td>
+			</tr>
+			<tr>
+				<td class='LineBottom LineRight LineLeft'span style="font-weight:bold ">Quarter1</td>
+				<td colspan='2' class='LineBottom LineRight' align ='left'><span > {RNo_Q1} </span> </td>
+				<td class='LineBottom LineRight'colspan='1'  style="text-align:right"> {Amount_Q1} </td>
+				<td class='LineBottom LineRight'colspan='1' style="text-align :right "> {Amount_Q1} </td>
+			</tr>
+			<tr>
+				<td class='LineBottom LineLeft LineRight' style="font-weight:bold">Quarter2</td>
+				<td colspan='2' class='LineBottom LineRight' align ='left' > {RNo_Q2} </td>
+				<td class='LineBottom LineRight'colspan='1' style="text-align:right"> {Amount_Q2} </td>
+				<td class='LineBottom LineRight'colspan='1' style="text-align:right"> {Amount_Q2} </td>
+			</tr>
+			<tr>
+				<td class='LineBottom LineLeft LineRight' span style="font-weight:bold ">Quarter3</td>
+				<td colspan="2" class='LineBottom LineRight' align ='left'>{RNo_Q3}</td>
+				<td class='LineBottom LineRight'colspan='1'  style="text-align:right "> {Amount_Q3} </td>
+				<td class='LineBottom LineRight'colspan='1'  style="text-align:right "> {Amount_Q3} </td>
+			</tr>	
+			<tr>
+				<td class='LineBottom LineRight LineLeft' style="font-weight:bold ">Quarter4</td>
+				<td colspan="2" class='LineBottom LineRight' align ='left'>{RNo_Q4}</td>
+				<td class='LineBottom LineRight'  style="text-align:right "> {Amount_Q4} </td>
+				<td class='LineBottom LineRight' colspan='1'  style="text-align:right "> {Amount_Q4} </td>
+			</tr>
+			<tr>
+				<td class='LineBottom LineLeft' style="font-weight:bold">Total</td>
+				<td colspan="2" class='LineBottom LineRight' align ='left'></td>
+				<td colspan='1'class='LineBottom LineRight'  style="font-weight:bold;text-align:right "> {Amount_QT1} </td>
+				<td class='LineBottom LineRight'colspan='1' style="font-weight:bold;text-align:right "> {Amount_QT2} </td>
+			</tr>
+
+			<tr>
+				<td colspan ='5'class='LineBottom LineRight LineLeft' style='font-weight:bold;padding-bottom:10px;text-align:Center'> PART B (Refer Note 1) </td>
+			</tr>
+			<tr>
+				<td class='LineBottom LineRight LineLeft'colspan ='5' style='font-weight:bold;padding-bottom:10px;text-align:left'> Details of Salary paid and any other income and tax deduct </td>
+			</tr>
+			<tr>
+				<td colspan ="2" class='LineRight LineLeft' style='font-weight:bold;'>1. Gross Salary</td>
+				<td class=' LineRight'>&nbsp</td>
+				<td class=' LineRight'></td>
+				<td class=' LineRight'></td>
+			</tr>
+			<tr class='LineBottom LineLeft LineRight'>
+				<td colspan ="2" class='LineRight LineLeft' >&nbsp;&nbsp; (a) &nbsp; Salary as per provisions contained in sec.17(1)</td>
+				<td class=' LineRight' ><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span>{1a}</td>
+				<td class=' LineRight'></td>
+				<td class=' LineRight' ></td>
+		</tr>
+
+		<tr>
+			<td colspan="2"  class='LineRight LineLeft'>&nbsp;&nbsp; (b) &nbsp; Value of perquisites u/s 17(2)(as per Form No.12BA,wherever applicable)</td>
+			<td class=' LineRight' ><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span>{1b}</td>
+			<td class=' LineRight'></td>
+			<td class=' LineRight'></td>
+		</tr>
+
+		<tr>
+			<td colspan ="2"  class='LineLeft LineRight' >&nbsp;&nbsp; (c)&nbsp Profits in lieu of salary under section 17(3)(as per Form No. 12BB,wherever applicable)</td>
+			<td class=' LineRight' ><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {1c}</td>
+			<td class=' LineRight'></td>
+			<td class='LineRight'></td>
+		</tr>
+
+		<tr>
+			<td colspan ="2"  class='LineLeft LineRight' >&nbsp &nbsp (d)&nbsp Total</td>
+			<td class='LineRight' ></td>
+			<td class='LineRight' ><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {1Total}</td>
+			<td class='LineRight' ></td>
+		</tr>
+		<tr>
+			<td colspan ="2"  class='LineBottom LineLeft LineRight' style='font-weight:bold;'>2. Less:Allowance to the extent exempt u/s 10</td>
+			<td class='LineRight' ></td>
+			<td class='LineRight' ></td>
+			<td class='LineRight'></td>
+		</tr>
+
+		{Allowance_2}
+
+		<tr>
+			<td colspan='2'  class='LineBottom LineLeft LineRight' style='font-weight:bold;' >3. Balance (1-2)</td>
+			<td class=' LineRight' ></td>
+			<td colspan='1'  class=' LineRight' ><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Bal_3}</td>
+			<td colspan='1'  class=' LineRight' ></td>
+		</tr>
+
+		<tr>
+			<td colspan='2'  class='LineBottom LineRight LineLeft' style='font-weight:bold;'>4. Deductions:</td>
+			<td class=' LineRight'></td>
+			<td colspan='1'  class=' LineRight'></td>
+			<td colspan='1'class=' LineRight' ></td>
+		</tr>
+
+		{Deductions_4}
+		
+		<tr>
+			<td colspan ="2"  class='LineBottom LineRight LineLeft' style='font-weight:bold;'>5. Aggregate of 4(a) and (b) </td>
+			<td colsapn="1" class=' LineRight'></td>
+			<td class=' LineRight'><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {AGG_5}</td>
+			<td class=' LineRight'></td>
+		</tr>
+
+		<tr>
+			<td colspan ="2"  class='LineBottom LineRight LineLeft' style='font-weight:bold;'>6. Income chargeable under the head 'salaries' (3-5) </td>
+			<td class=' LineRight'></td>
+			<td class=' LineRight'></td>
+			<td class=' LineRight'><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {TotalIncome_6}</td>
+		</tr>
+
+		<tr>
+			<td colspan ="2" class="LineLeft LineBottom LineRight" style='font-weight:bold;' >7.Add: Any other income reported by the employee </td>
+			<td class=' LineRight'></td>
+			<td class=' LineRight'></td>
+			<td class=' LineRight'></td>
+		</tr>
+
+		{OtherIncome}
+		
+		<tr>
+			<td colspan ="2"  class="LineLeft LineRight LineBottom" style='font-weight:bold;'>8. Gross total income (6+7)</td>
+			<td class="LineRight LineBottom"></td>
+			<td class="LineRight LineBottom"></td>
+			<td class="LineRight LineBottom" ><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Gross_8}</td>
+		</tr>
+
+		</table>
+
+		<br/><br/><br/><br/><br/>
+
+		<table  style='width:100%;font-size:12px;' cellpadding="2" cellspacing="0" border="0" class='table'>
+
+		<tr>
+			<td width='50%' colspan ="2" class="LineBottom LineTop LineRight LineLeft" style='font-weight:bold;'>9. Deductions under Chapter VIA</td>
+			<td width='17%' class="LineBottom LineTop LineRight"></td>
+			<td width='15%' class="LineBottom LineTop LineRight"></td>
+			<td width='18%' class="LineBottom LineTop LineRight"></td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineLeft LineRight" style='font-weight:bold;'>&nbsp;&nbsp; (A) sections 80C, 80CCC and 80CCD</td>
+			<td class="LineBottom LineRight"></td>
+			<td class="LineBottom LineRight"></td>
+			<td class="LineBottom LineRight"></td>
+		</tr>
+
+		{Sec80C}
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (b) section 80CCC</td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Sec80CCC_G}</td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {SeC80CCC_D}</td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineLeft LineRight">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (c) section 80CCD</td>
+			<td class="LineBottom LineRight" ></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Sec80CCD_G}</td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {SeC80CCD_D}</td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineLeft LineRight">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (d) section 80CCF</td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Sec80CCF_G}</td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {SeC80CCF_D}</td>
+		</tr>
+
+		<tr>
+			<td colspan ="2" class="LineBottom LineLeft LineRight"></td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight" style='font-weight:bold;'><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Sec80_G}</td>
+			<td align ='left' class="LineBottom LineRight" style='font-weight:bold;'><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {SeC80_D}</td>
+		</tr>
+
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-size:10px;'>&nbsp;&nbsp;&nbsp;1. Aggregate amount deductible under section
+				 80C shall not exceed one lakh rupees.
+				<br/>&nbsp;&nbsp;&nbsp;2. Aggregate amount deductible under the three sections, i.e., 80C,80CCC and & 80CCD shall
+				not exceed one lakh rupees.
+			</td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight" ></td>
+		</tr>
+
+		{OtherSection_B}
+		
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-weight:bold;'>10. Aggregate of deductible amount under Chapter VIA</td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight" ></td>
+			<td align ='left' class="LineBottom LineRight"  ><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Agg_10}</td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-weight:bold;'>11. Total Income (8-10) </td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight" ></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {TotalIncome_11}</td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-weight:bold;'>12. Tax on total income</td>
+			<td class="LineBottom LineRight" ></td>
+			<td align ='left' class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {TaxonIncome_12}</td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-weight:bold;'>13. Education cess @ 3% (on tax computed at S.No. 12)</td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {EDUCESS_13}</td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-weight:bold;'>14. Tax payable (12+13)</td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {TaxPay_14}</td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-weight:bold;'>15. Less: Relief under section 89 (attach details)</td>
+			<td class="LineBottom LineRight"></td>
+			<td class="LineBottom LineRight" align ='center'  ></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {Refund_15} </td>
+		</tr>
+		<tr>
+			<td colspan ="2" class="LineBottom LineRight LineLeft" style='font-weight:bold;'>16. Tax payable (14-15)</td>
+			<td class="LineBottom LineRight"></td>
+			<td align ='left ' class="LineBottom LineRight"></td>
+			<td align ='left' class="LineBottom LineRight"><span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span> {TaxPay_16}</td>
+		</tr>
+		<tr>
+			<td colspan='5' class="LineBottom LineRight LineLeft"style='color:#000000;font-size:12px;font-weight:bold;padding-bottom:10px;text-align:Center'>Verification</td>
+		</tr>
+		<tr>
+			<td colspan='5' rowspan='1' class="LineBottom LineLeft LineRight" > <span style= 'font-weight:bold;'>I  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {Verifier} son/daughter of     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Verifier_FM} </span> &nbsp;&nbsp;&nbsp;&nbsp;      working in the capacity of {verifierDesignation}
+				(designation) do here by certify that a sum of <span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span><span style= 'font-weight:bold;'>{TotalTax_Verif}</span> [<span class='webRupee' style='font-family:WebRupee;font-weight:bold;'>Rs. &nbsp;</span><span style= 'font-weight:bold;'>{TotalTaxWords_Verif}</span>(in words) ] has been
+				deducted and deposited to the credit of Central Government. I further certify that the information given above is true, complete and
+				correct and is based on the books of accounts, documents, TDS statement, TDS deposited and other available records.
+			</td>
+		</tr> 
+
+		<tr>
+			<td class="LineBottom LineRight LineLeft">Place:</td> 
+			<td class="LineBottom LineRight">Mumbai </td>
+			<td colspan="3" class="LineRight"></td> 
+		</tr>    
+
+		<tr>
+			<td class="LineBottom LineRight LineLeft" >Date:</td>   
+			<td class="LineRight LineBottom">16/06/2011</td>    
+			<td colspan="3" class="LineRight LineBottom">Signature of the person responsible for deduction of tax</td>           
+		</tr>  
+
+		<tr>
+			<td colspan='2' class="LineBottom LineLeft LineRight" > Designation:<span style='font-weight:bold'>&nbsp;&nbsp;&nbsp;{WardDeptDesig}</span></td>         
+			<td colspan="3" class="LineBottom LineRight">Full &nbsp Name:&nbsp {Verifier_FullNM}</td> 
+		</tr> 
+	</table> 
+
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
